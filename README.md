@@ -15,3 +15,7 @@ The Windows Driver Model (WDM) unifies device driver development for the two par
 
 What Kind of Driver Do I Need? 
 ## ![image](https://github.com/user-attachments/assets/fd5ad58e-a694-43d8-a862-b7e515a58f37)
+
+
+## The Two Basic Data Structures 
+### Driver Objects 
