@@ -12,3 +12,6 @@ The Windows Driver Model (WDM) unifies device driver development for the two par
 - Windows XP operates in two modes: user mode and kernel mode, with device interactions managed through APIs like ReadFile.
 - The I/O Manager handles device interaction requests, converting them into I/O request packets (IRPs) for device drivers.
 - NtReadFile, a kernel-mode routine, validates parameters, creates an IRP, and allows the device driver to process requests independently of the user-mode application.
+
+What Kind of Driver Do I Need? 
+## ![image](https://github.com/user-attachments/assets/fd5ad58e-a694-43d8-a862-b7e515a58f37)
