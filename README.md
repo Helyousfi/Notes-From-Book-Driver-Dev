@@ -18,4 +18,9 @@ What Kind of Driver Do I Need?
 
 
 ## The Two Basic Data Structures 
+A WDM driver manages two key data structures: the driver object, which holds pointers to driver routines, and the device object, which represents and manages an instance of hardware.
 ### Driver Objects 
+The I/O Manager uses the DRIVER_OBJECT data structure to represent each device driver. It includes both accessible and opaque fields (similar to public and private members in C++). The DRIVER_OBJECT is declared in the DDK headers, along with its pointer type and associated atomic data types, such as CSHORT for short integers. This declaration pattern is common in kernel-mode programming within the DDK.
+
+### Device Objects 
+A device object in a WDM driver includes fields like DriverObject, which references the associated driver, and NextDevice, which links to other device objects from the same driver, although the latter is rarely used by drivers due to synchronization complexities.
